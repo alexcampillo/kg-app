@@ -1,0 +1,45 @@
+<template name="allUsers">
+	{{#each users}}
+<section class="">
+	<article class="profile-container container col-md-3">
+			<!--<img class="profilePic" src="/jv.jpg">-->
+			<article class="col-md-12">
+				<img class="img-responsive" src="/dogewalker.jpg" >
+				<!-- <button href="#" id="getPic" class="btn btn-default">Update Profile Pic</button> -->
+				
+				<a href="{{pathFor 'profile'}}"><h2>{{profile.displayName}}</h2></a>
+				<h3>{{profile.displayTitle}}</h3>
+			</article>
+			<article class="col-md-12">
+				<p>{{profile.displayBio}}</p>
+
+				<h3><a href="#" data-toggle="modal" id="followers"><span>{{profile.followers}}308</span> Reached</a></h3>
+				<h3><a href="#" data-toggle="modal" id="following"><span>{{profile.following}}134</span> Recs</a></h3>
+			</article>
+	</article>
+</section>
+	{{/each}}
+</template>
+
+<template name="searchUsers">
+<section class="">
+	<article class="profile-container container col-md-3">
+			<!--<img class="profilePic" src="/jv.jpg">-->
+			<article class="col-md-12">
+				<img class="img-responsive" src="/yoga.png" style="height: 100px; width: auto;">
+				<!-- <button href="#" id="getPic" class="btn btn-default">Update Profile Pic</button> -->
+				
+				<a href="{{pathFor 'profile'}}"><h2>{{profile.displayName}}</h2></a>
+				<h3>{{profile.displayTitle}}</h3>
+			</article>
+			<article class="col-md-12">
+				<p>{{profile.displayBio}}</p>
+
+				{{> followButton this}}
+
+				<h3><a href="#" data-toggle="modal" id="followers"><span>{{profile.followers.length}}</span> Reached</a></h3>
+				<h3><a href="#" data-toggle="modal" id="following"><span>{{profile.following.length}}</span> Recs</a></h3>
+			</article>
+	</article>
+</section>
+</template>

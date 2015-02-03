@@ -1,0 +1,80 @@
+<template name="profile">
+
+<section class="">
+	<article class="profile-container container col-md-3">
+			<!--<img class="profilePic" src="/jv.jpg">-->
+			<article class="col-md-12">
+				<img class="img-responsive" src="/yoga.png" style="height: 100px; width: auto;">
+				<!-- <button href="#" id="getPic" class="btn btn-default">Update Profile Pic</button> -->
+				
+				<h2>{{user.profile.displayName}}</h2>
+				<h3>{{user.profile.displayTitle}}</h3>
+			</article>
+			<article class="col-md-12">
+				<p>{{user.profile.displayBio}}</p>
+
+                {{>followButton user}}
+                <h3><a href="#" data-toggle="modal" id="followers"><span>{{user.profile.followers.length}}</span> reached</a></h3>
+                <h3><a href="#" data-toggle="modal" id="following"><span>{{user.profile.following.length}}</span> recs</a></h3>
+			</article>
+	</article>
+
+    <!-- <article class="col-md-9">
+        {{>postsList}}
+    </article> -->
+</section>
+</template>
+
+<template name="followers">
+	<div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Reached</h4>
+                </div>
+
+                <div class="modal-body">
+                    <ul>
+                    {{#each user}}
+                        <li>{{profile.followers}}</li>
+                    {{/each}}
+                    </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="following">
+	<div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Recs</h4>
+                </div>
+
+                <div class="modal-body">
+                    {{#each user}}
+                        <li>{{user.profile.following}}</li>
+                    {{/each}}
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>
+
+
+
+

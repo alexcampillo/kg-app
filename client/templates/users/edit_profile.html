@@ -1,0 +1,50 @@
+<template name="profileEditModal">
+    <div class="modal fade">
+      <div class="modal-dialog">
+          <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Update Profile</h4>
+                </div>
+
+                <div class="modal-body">
+                    {{>profileEdit}}
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+          </div>
+      </div>
+    </div>
+</template>
+
+
+<template name="profileEdit">
+	<form class="main form">
+    <div class="form-group">
+            <label class="control-label" for="bio">Name</label>
+          <div class="controls">
+              <input name="displayName" id="displayName" type="text" value="" placeholder="Display name on you profile" class="form-control"/>
+              <span class="help-block"></span>
+          </div>
+      </div>
+
+		<div class="form-group">
+      			<label class="control-label" for="title">Skill Level</label>
+      		<div class="controls">
+          		<input name="displayTitle" id="displayTitle" type="text" value="" placeholder="ex: Instructor" class="form-control"/>
+          		<span class="help-block"></span>
+      		</div>
+    	</div>
+
+    	<div class="form-group">
+      			<label class="control-label" for="bio">Bio</label>
+      		<div class="controls">
+          		<input name="displayBio" id="displayBio" type="text" value="" placeholder="ex: Interested in all styles, new to yoga." class="form-control"/>
+          		<span class="help-block"></span>
+      		</div>
+    	</div>
+
+    	<input type="submit" value="Submit" class="btn btn-primary submit"/>
+	</form>
+</template>

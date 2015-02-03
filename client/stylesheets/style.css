@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'proximanovaSemibold';
+    src: url('/fonts/proximanova-sbold-webfont.eot');
+    src: url('/fonts/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-sbold-webfont.woff2') format('woff2'),
+         url('/fonts/proximanova-sbold-webfont.woff') format('woff'),
+         url('/fonts/proximanova-sbold-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-sbold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanovaThin';
+    src: url('/fonts/proximanova-thin-webfont.eot');
+    src: url('/fonts/proximanova-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-thin-webfont.woff2') format('woff2'),
+         url('/fonts/proximanova-thin-webfont.woff') format('woff'),
+         url('/fonts/proximanova-thin-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-thin-webfont.svg#proxima_novathin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanovaReg';
+    src: url('/fonts/proximanova-reg-webfont.eot');
+    src: url('/fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-reg-webfont.woff2') format('woff2'),
+         url('/fonts/proximanova-reg-webfont.woff') format('woff'),
+         url('/fonts/proximanova-reg-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-reg-webfont.svg#proxima_novaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanovaLight';
+    src: url('/fonts/proximanova-light-webfont.eot');
+    src: url('/fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-light-webfont.woff2') format('woff2'),
+         url('/fonts/proximanova-light-webfont.woff') format('woff'),
+         url('/fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanovaBold';
+    src: url('/fonts/proximanova-bold-webfont.eot');
+    src: url('/fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('/fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('/fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-bold-webfont.svg#proxima_novabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.grid-block, .main, .post, .comments li, .comment-form {
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+
+body {
+  background: rgba(173, 196, 191, .5);
+  color: #666666; 
+  font-family: "proximanovaReg", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  margin-bottom: 10px; 
+  background-color: #41B7AA;
+  color: #fff;
+}
+
+.navbar .navbar-nav li a, .navbar .navbar-header a, .navbar .navbar-nav li p {
+  color: #fff;
+}
+  /* line 32, ../sass/style.scss */
+  .navbar .navbar-inner {
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 3px 3px;
+    -ms-border-radius: 0px 0px 3px 3px;
+    -o-border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 3px 3px; }
+
+.searching input {
+  color: #262626;
+}
+
+#spinner {
+  height: 300px; }
+
+  .profile-container {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 1%;
+  box-shadow: 0 1px 1px rgba(0,0,0,.15);
+  margin-top: 5%;
+}
+
+.post h5 {
+  display: inline;
+  margin-right: 20px;
+}
+
+.post h5 span {
+  color: #262626;
+}
+
+h2 {
+  font-size: 22px;
+  font-family: "proximanovaBold";
+}
+
+a h2 {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover h2 {
+  text-decoration: none;
+  color: #999;
+}
+
+h3 {
+  font-size: 16px;
+  color: #41B7AA;
+  font-family: "proximanovaSemibold";
+}
+
+h3 a {
+  color: #666;
+}
+
+h3 a:hover {
+  color: #999;
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+}
+
+.post {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1;
+  position: relative;
+  opacity: 1; }
+  .post:before, .post:after {
+    content: "";
+    display: table; }
+  .post:after {
+    clear: both; }
+  .post.invisible {
+    opacity: 0; }
+  .post.instant {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none; }
+  .post.animate{
+    -webkit-transition: all 300ms 0ms;
+    -webkit-transition-delay: ease-in;
+    -moz-transition: all 300ms 0ms ease-in;
+    -o-transition: all 300ms 0ms ease-in;
+    transition: all 300ms 0ms ease-in; }
+  .post .upvote {
+    display: block;
+    margin: 7px 12px 0 0;
+    float: left; }
+  .post .post-content {
+    float: left; }
+    .post .post-content h3 {
+      margin: 0;
+      line-height: 1.4;
+      font-size: 18px; }
+      .post .post-content h3 a {
+        display: inline-block;
+        margin-right: 5px; 
+        color: #466A66;
+      }
+      .post .post-content h3 span {
+        font-weight: normal;
+        font-size: 14px;
+        display: inline-block;
+        color: #aaaaaa; }
+    .post .post-content p {
+      margin: 0; }
+  .post .discuss {
+    display: block;
+    float: right;
+    margin-top: 7px; }
+
+    .profile {
+  background-color: #eee;
+  padding: 1%;
+  height: 480px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+
+ul, li {
+  list-style: none
+}
+
+.comments {
+  list-style-type: none;
+  margin: 0; }
+  .comments li h4 {
+    font-size: 16px;
+    margin: 0; }
+    .comments li h4 .date {
+      font-size: 12px;
+      font-weight: normal; }
+    .comments li h4 a {
+      font-size: 12px; }
+  .comments li p:last-child {
+    margin-bottom: 0; }
+
+.dropdown-menu span {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  line-height: 20px;
+  color: #bbb;
+  white-space: nowrap; }
+
+.load-more {
+  display: block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 10px; }
+  .load-more:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.1); }
+
+.posts .spinner-container{
+  position: relative;
+  height: 100px;
+}
+
+.jumbotron{
+  text-align: center;
+}
+.jumbotron h2{
+  font-size: 60px;
+  font-weight: 100;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.errors{
+  position: fixed;
+  z-index: 10000;
+  padding: 10px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  pointer-events: none;
+}
+.alert {
+          animation: fadeOut 2700ms ease-in 0s 1 forwards;
+  -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+     -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+  width: 250px;
+  float: right;
+  clear: both;
+  margin-bottom: 5px;
+  pointer-events: auto;
+}

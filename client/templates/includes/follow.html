@@ -1,0 +1,13 @@
+<template name="followButton">
+	{{#if isCurrentUser this}}
+        <div>
+        	<button data-toggle="modal" id="editProfile" class="btn btn-default">Update Profile</button>
+        </div>
+    {{else}}
+        {{#if isFollowed}}
+            <button href="#" id="{{username}}" class="btn btn-success follow-btn">Reached</button>
+        {{else}}
+            <button href="#" id="{{username}}" class="btn btn-default follow-btn">Reach</button>
+        {{/if}}
+    {{/if}}
+</template>
