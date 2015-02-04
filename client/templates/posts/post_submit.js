@@ -13,7 +13,8 @@ Template.postSubmit.events({
 		level: $(e.target).find('[name=level]').val(),
 		when: $(e.target).find('[name=when]').val(),
 		where: $(e.target).find('[name=where]').val(),
-		time: $(e.target).find('[name=time]').val()
+		time: moment($(e.target).find('[name=time]').val()).format('h:mm a')
+
     };
 
     var errors = validatePost(post);

@@ -11,6 +11,10 @@ Template.postItem.helpers({
     return a.hostname;
   },
   upvotedClass: function() {
+/*============================================
+  UPVOTED CLASS
+  
+==============================================*/
     var userId = Meteor.userId();
     if (userId && !_.include(this.upvoters, userId)) {
       return 'btn-primary upvotable';
